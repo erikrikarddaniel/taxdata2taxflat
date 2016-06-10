@@ -61,3 +61,16 @@
 1437010	|	Boreoeutheria	|		|	scientific name	|
 1783270	|	FCB group	|		|	scientific name	|
 10665	|	Enterobacteria phage T4	|		|	scientific name	|
+10665	|	Bacteriophage T4	|		|	synonym	|
+10665	|	T4	|		|	genbank acronym	|
+10665	|	coliphage T4	|		|	synonym	|
+10665	|	phage T4	|		|	synonym	|
+2	|	Monera	|	Monera <Bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <Bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <Bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <Bacteria>	|	in-part	|
+2	|	bacteria	|	bacteria <blast2>	|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	not Bacteria Haeckel 1894	|		|	synonym	|
+2	|	prokaryote	|	prokaryote <Bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <Bacteria>	|	in-part	|

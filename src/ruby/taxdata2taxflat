@@ -115,8 +115,9 @@ end
 
 # Read the names file and set names
 begin
-  warn "Reading names file #{ARGV[1]}" if @options[:verbose]
+  warn "Reading scientific names from names file #{ARGV[1]}" if @options[:verbose]
   io = File.new(ARGV[1])
+  io = IO.popen("grep 'scientific name' #{ARGV[1]}", "r")
   io.each do |line|
     line.chomp!
     d = line.split(/\s*\|\s*/)
