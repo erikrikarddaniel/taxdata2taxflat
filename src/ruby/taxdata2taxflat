@@ -1,0 +1,134 @@
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# taxdata2taxflat
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
+
+$VERBOSE = true
+
+require 'optparse'
+
+# This array specifies which ranks to print, and in which order
+RANKS_TO_PRINT = %w( superkingdom kingdom phylum class order family genus species )
+
+@options = {}
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+taxdata2taxflat: Converts an NCBI taxdump to a tab-separated flat taxonomy file
+    taxdata2taxflat [options] nodes.dmp names.dmp
+BANNER
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = [ ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
+end
+
+class Taxon
+  attr_accessor :name, :rank
+
+  def initialize(nodedataarray)
+    @taxon_id  = nodedataarray[0]
+    @parent_id = nodedataarray[1]
+    @rank      = nodedataarray[2]
+    @parent    = nil
+    @name      = ''
+    @rp = nil
+  end
+
+  def ancestor_name(rank)
+    if @rank == rank
+      self.name
+    elsif @parent
+      @parent.ancestor_name(rank)
+    else
+      ''
+    end
+  end
+
+  def set_parent(index)
+    @parent = index[@parent_id] if @parent_id != @taxon_id
+  end
+
+  def line
+    # Only print if there's a superkingdom here or above
+    if ancestor_name('superkingdom') != ""
+      "#{@taxon_id}\t#{RANKS_TO_PRINT.map { |r| ancestor_name(r) }.join("\t")}\t#{name}\t#{rank}\n"
+    else
+      ""
+    end
+  end
+
+  def to_str
+    "Taxon: #{@taxon_id} '#{@name}' '#{@rank}', parent: #{@parent}"
+  end
+end
+
+# Read the nodes file
+taxa = { }
+begin
+  warn "Reading nodes file #{ARGV[0]}" if @options[:verbose]
+  io = File.new(ARGV[0])
+  io.each do |line|
+    line.chomp!
+    d = line.split(/\s*\|\s*/)
+    taxa[d[0]] = Taxon.new(d)
+  end
+rescue
+  warn "Failed to process file '#{ARGV[0]}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end
+
+# Loop over all taxa and set the parent
+taxa.each_value do |t|
+  t.set_parent(taxa) if t
+end
+
+# Read the names file and set names
+begin
+  warn "Reading names file #{ARGV[1]}" if @options[:verbose]
+  io = File.new(ARGV[1])
+  io.each do |line|
+    line.chomp!
+    d = line.split(/\s*\|\s*/)
+    taxa[d[0]].name = d[1] if taxa[d[0]]
+  end
+rescue
+  warn "Failed to process file '#{ARGV[1]}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end
+
+# Loop over taxa, in numerical order and print
+warn "Printing nodes" if @options[:verbose]
+puts "ncbi_taxon_id\t#{RANKS_TO_PRINT.join("\t")}\ttaxon\trank"
+taxa.keys.sort { |a,b| a.to_i <=> b.to_i }.each do |k|
+  print taxa[k].line
+end

@@ -7,5 +7,5 @@ all: taxdata2taxflat
 taxdata2taxflat: taxdata2taxflat.00
 
 taxdata2taxflat.00:
-	../../src/ruby/taxdata2taxflat --verbose $@.nodes.dmp $@.names.dmp > $@.out
+	@../../src/ruby/taxdata2taxflat $@.nodes.dmp $@.names.dmp > $@.out
 	@$(CHECK)

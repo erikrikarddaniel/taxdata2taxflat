@@ -1,33 +1,61 @@
-ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	strain
-2	Bacteria								
-237	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium		
-976	Bacteria		Bacteroidetes						
-986	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	
-2157	Archaea								
-2301	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales				
-2759	Eukaryota								
-7711	Eukaryota	Metazoa	Chordata						
-9443	Eukaryota	Metazoa	Chordata	Mammalia	Primates				
-9596	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan		
-9597	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan	Pan paniscus	
-9604	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae			
-9605	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo		
-9606	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	
-10239	Viruses								
-10662	Viruses			Caudovirales	Myoviridae				
-28883	Viruses			Caudovirales					
-28890	Archaea		Euryarchaeota						
-33208	Eukaryota	Metazoa	
-40674	Eukaryota	Metazoa	Chordata	Mammalia	
-49546	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae			
-63221	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens neanderthalensis
-90142	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae			
-117743	Bacteria		Bacteroidetes	Flavobacteriia					
-183967	Archaea		Euryarchaeota	Thermoplasmata					
-200644	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales				
-348604	Viruses			Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato			
-376686	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	Flavobacterium johnsoniae UW101
-507753	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma		
-507754	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	Acidiplasma aeolicum	
-697289	Viruses			Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	Enterobacteria phage RB55		
-741158	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens ssp. Denisova
+ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	taxon	rank
+2	Bacteria								Bacteria	superkingdom
+237	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium		Flavobacterium	genus
+976	Bacteria		Bacteroidetes						Bacteroidetes	phylum
+986	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	Flavobacterium johnsoniae	species
+2157	Archaea								Archaea	superkingdom
+2301	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales				Thermoplasmatales	order
+2759	Eukaryota								Eukaryota	superkingdom
+6072	Eukaryota	Metazoa							Eumetazoa	no rank
+7711	Eukaryota	Metazoa	Chordata						Chordata	phylum
+7742	Eukaryota	Metazoa	Chordata						Vertebrata	no rank
+7776	Eukaryota	Metazoa	Chordata						Gnathostomata	no rank
+8287	Eukaryota	Metazoa	Chordata						Sarcopterygii	no rank
+9347	Eukaryota	Metazoa	Chordata	Mammalia					Eutheria	no rank
+9443	Eukaryota	Metazoa	Chordata	Mammalia	Primates				Primates	order
+9526	Eukaryota	Metazoa	Chordata	Mammalia	Primates				Catarrhini	parvorder
+9596	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan		Pan	genus
+9597	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan	Pan paniscus	Pan paniscus	species
+9604	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae			Hominidae	family
+9605	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo		Homo	genus
+9606	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+10239	Viruses								Viruses	superkingdom
+10662	Viruses				Caudovirales	Myoviridae			Myoviridae	family
+10663	Viruses				Caudovirales	Myoviridae	T4likevirus		T4likevirus	genus
+10665	Viruses				Caudovirales	Myoviridae	T4likevirus	Enterobacteria phage T4 sensu lato	Enterobacteria phage T4	no rank
+28883	Viruses				Caudovirales				Caudovirales	order
+28890	Archaea		Euryarchaeota						Euryarchaeota	phylum
+32523	Eukaryota	Metazoa	Chordata						Tetrapoda	no rank
+32524	Eukaryota	Metazoa	Chordata						Amniota	no rank
+32525	Eukaryota	Metazoa	Chordata	Mammalia					Theria	no rank
+33154	Eukaryota								Opisthokonta	no rank
+33208	Eukaryota	Metazoa							Metazoa	kingdom
+33213	Eukaryota	Metazoa							Bilateria	no rank
+33511	Eukaryota	Metazoa							Deuterostomia	no rank
+35237	Viruses								dsDNA viruses, no RNA stage	no rank
+40674	Eukaryota	Metazoa	Chordata	Mammalia					Mammalia	class
+49546	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae			Flavobacteriaceae	family
+63221	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens neanderthalensis	subspecies
+68336	Bacteria								Bacteroidetes/Chlorobi group	no rank
+89593	Eukaryota	Metazoa	Chordata						Craniata	subphylum
+90142	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae			Ferroplasmaceae	family
+117570	Eukaryota	Metazoa	Chordata						Teleostomi	no rank
+117571	Eukaryota	Metazoa	Chordata						Euteleostomi	no rank
+117743	Bacteria		Bacteroidetes	Flavobacteriia					Flavobacteriia	class
+183967	Archaea		Euryarchaeota	Thermoplasmata					Thermoplasmata	class
+200644	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales				Flavobacteriales	order
+207598	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae			Homininae	subfamily
+314146	Eukaryota	Metazoa	Chordata	Mammalia					Euarchontoglires	superorder
+314293	Eukaryota	Metazoa	Chordata	Mammalia	Primates				Simiiformes	infraorder
+314295	Eukaryota	Metazoa	Chordata	Mammalia	Primates				Hominoidea	superfamily
+348604	Viruses				Caudovirales	Myoviridae	T4likevirus	Enterobacteria phage T4 sensu lato	Enterobacteria phage T4 sensu lato	species
+376686	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	Flavobacterium johnsoniae UW101	no rank
+376913	Eukaryota	Metazoa	Chordata	Mammalia	Primates				Haplorrhini	suborder
+507753	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma		Acidiplasma	genus
+507754	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	Acidiplasma aeolicum	Acidiplasma aeolicum	species
+697289	Viruses				Caudovirales	Myoviridae	T4likevirus	Enterobacteria phage T4 sensu lato	Enterobacteria phage RB55	no rank
+741158	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens ssp. Denisova	subspecies
+1198136	Viruses				Caudovirales	Myoviridae			Tevenvirinae	subfamily
+1338369	Eukaryota	Metazoa	Chordata						Dipnotetrapodomorpha	no rank
+1437010	Eukaryota	Metazoa	Chordata	Mammalia					Boreoeutheria	no rank
+1783270	Bacteria								FCB group	no rank
