@@ -13,6 +13,9 @@ ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	strai
 9604	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	
 9605	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	
 9606	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	
+10239		Viruses		
+10662		Viruses		Caudovirales	Myoviridae	
+28883		Viruses		Caudovirales	
 28890	Archaea	Euryarchaeota	
 33208	Eukaryota	Metazoa	
 40674	Eukaryota	Metazoa	Chordata	Mammalia	
@@ -23,12 +26,9 @@ ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	strai
 131567	
 183967	Archaea	Euryarchaeota	Thermoplasmata	
 200644	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	
+348604		Viruses		Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	
 376686	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	Flavobacterium johnsoniae UW101
 507753	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	
 507754	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	Acidiplasma aeolicum
-741158	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens ssp. Denisova
 697289		Viruses		Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	Enterobacteria phage RB55
-348604		Viruses		Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	
-10662		Viruses		Caudovirales	Myoviridae	
-28883		Viruses		Caudovirales	
-10239		Viruses		
+741158	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens ssp. Denisova
