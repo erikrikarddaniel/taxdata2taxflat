@@ -1,34 +1,33 @@
 ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	strain
-2	Bacteria		
-237	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	
-976	Bacteria		Bacteroidetes	
+2	Bacteria								
+237	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium		
+976	Bacteria		Bacteroidetes						
 986	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	
-2157	Archaea	
-2301	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	
-2759	Eukaryota	
-7711	Eukaryota	Metazoa	Chordata	
-9443	Eukaryota	Metazoa	Chordata	Mammalia	Primates	
-9596	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan	
+2157	Archaea								
+2301	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales				
+2759	Eukaryota								
+7711	Eukaryota	Metazoa	Chordata						
+9443	Eukaryota	Metazoa	Chordata	Mammalia	Primates				
+9596	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan		
 9597	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Pan	Pan paniscus	
-9604	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	
-9605	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	
+9604	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae			
+9605	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo		
 9606	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	
-28890	Archaea	Euryarchaeota	
-33208	Eukaryota	Metazoa	
-40674	Eukaryota	Metazoa	Chordata	Mammalia	
-49546	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	
+10239	Viruses								
+10662	Viruses			Caudovirales	Myoviridae				
+28883	Viruses			Caudovirales					
+28890	Archaea		Euryarchaeota						
+33208	Eukaryota	Metazoa							
+40674	Eukaryota	Metazoa	Chordata	Mammalia					
+49546	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae			
 63221	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens neanderthalensis
-90142	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	
-117743	Bacteria		Bacteroidetes	Flavobacteriia	
-131567	
-183967	Archaea	Euryarchaeota	Thermoplasmata	
-200644	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	
+90142	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae			
+117743	Bacteria		Bacteroidetes	Flavobacteriia					
+183967	Archaea		Euryarchaeota	Thermoplasmata					
+200644	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales				
+348604	Viruses			Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato			
 376686	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium	Flavobacterium johnsoniae	Flavobacterium johnsoniae UW101
-507753	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	
-507754	Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	Acidiplasma aeolicum
+507753	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma		
+507754	Archaea		Euryarchaeota	Thermoplasmata	Thermoplasmatales	Ferroplasmaceae	Acidiplasma	Acidiplasma aeolicum	
+697289	Viruses			Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	Enterobacteria phage RB55		
 741158	Eukaryota	Metazoa	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens ssp. Denisova
-697289		Viruses		Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	Enterobacteria phage RB55
-348604		Viruses		Caudovirales	Myoviridae	Enterobacteria phage T4 sensu lato	
-10662		Viruses		Caudovirales	Myoviridae	
-28883		Viruses		Caudovirales	
-10239		Viruses		
