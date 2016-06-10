@@ -1,0 +1,9 @@
+sessionname taxdata2taxflat
+setenv ROOT $PWD
+chdir src/ruby
+screen -t ruby
+chdir $ROOT/test/ruby
+screen -t truby
+chdir $ROOT
+screen -t man
+screen -t root
