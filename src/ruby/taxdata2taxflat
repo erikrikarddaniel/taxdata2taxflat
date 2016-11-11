@@ -135,3 +135,5 @@ puts "131567\t\t\t\t\t\t\t\t\tcellular organisms\tno rank"
 taxa.keys.sort { |a,b| a.to_i <=> b.to_i }.each do |k|
   print taxa[k].line
 end
+puts "-1\t\t\t\t\t\t\t\t\tmegan -1\tno rank"
+puts "-2\t\t\t\t\t\t\t\t\tmegan -2\tno rank"
