@@ -130,6 +130,7 @@ end
 # Loop over taxa, in numerical order and print
 warn "Printing nodes" if @options[:verbose]
 puts "ncbi_taxon_id\t#{RANKS_TO_PRINT.join("\t")}\ttaxon\trank"
+puts "1\t\t\t\t\t\t\t\t\troot\tno rank"
 taxa.keys.sort { |a,b| a.to_i <=> b.to_i }.each do |k|
   print taxa[k].line
 end
