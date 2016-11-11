@@ -1,5 +1,6 @@
 ncbi_taxon_id	superkingdom	kingdom	phylum	class	order	family	genus	species	taxon	rank
 1									root	no rank
+131567									cellular organisms	no rank
 2	Bacteria								Bacteria	superkingdom
 237	Bacteria		Bacteroidetes	Flavobacteriia	Flavobacteriales	Flavobacteriaceae	Flavobacterium		Flavobacterium	genus
 976	Bacteria		Bacteroidetes						Bacteroidetes	phylum
