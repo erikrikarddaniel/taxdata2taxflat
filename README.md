@@ -3,7 +3,7 @@ Converts an NCBI taxonomy dump ("taxdata") to a flat tsv file with columns for r
 
 ## How to run the program
 
-The program is a Ruby script, requiring a reasonably recent version of `ruby`.
+The program is a Ruby script, requiring a reasonably recent version of Ruby.
 I think anything from 1.9 and up will work. (The default options system changed
 in 1.9.)
 
@@ -22,4 +22,11 @@ file like this:
 
 ```bash
 $ taxdata2taxflat --verbose nodes.dmp names.dmp > taxflat.tsv
+```
+
+You can get help from the program, although, at the time of writing there aren't
+any other options than `--verbose` and `--version`.
+
+```bash
+$ taxdata2taxflat --help
 ```

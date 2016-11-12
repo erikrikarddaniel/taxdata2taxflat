@@ -20,6 +20,8 @@ $VERBOSE = true
 
 require 'optparse'
 
+VERSION = 1.0
+
 # This array specifies which ranks to print, and in which order
 RANKS_TO_PRINT = %w( superkingdom kingdom phylum class order family genus species )
 
@@ -37,6 +39,11 @@ BANNER
 
   opts.on "-v", "--verbose", "Be verbose"  do |v| 
     @options[:verbose] = v 
+  end
+
+  opts.on "-V", "--version", "Version" do
+    puts "taxdata2taxflat version #{VERSION}"
+    exit 0
   end
 end
 begin
