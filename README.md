@@ -24,8 +24,7 @@ file like this:
 $ taxdata2taxflat --verbose nodes.dmp names.dmp > taxflat.tsv
 ```
 
-You can get help from the program, although, at the time of writing there aren't
-any other options than `--verbose` and `--version`.
+You can get help from the program:
 
 ```bash
 $ taxdata2taxflat --help
