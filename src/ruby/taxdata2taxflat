@@ -109,6 +109,12 @@ begin
   io.each do |line|
     line.chomp!
     d = line.split(/\s*\|\s*/)
+
+    # Fix for viruses, to set rank to kingdom for second level
+    if ( d[1] == "10239" and d[2] == 'no rank' ) then
+      d[2] = 'kingdom' 
+    end
+
     taxa[d[0]] = Taxon.new(d)
   end
 rescue
